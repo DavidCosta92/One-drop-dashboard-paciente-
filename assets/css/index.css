@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+root{
+    scroll-behavior: smooth;
+}
+/* secciones pendientes a eliminar */
+.seccionPendiente{
+    min-height: 500px;
+}
+.blog{
+    background-color: rgb(255, 81, 0);
+}
+.soporte{
+    background-color: rgb(255, 0, 60);
+}
+
+
+/* Header: topbar y nav  */
+.topbar{
+    display: flex;
+    justify-content: space-around;
+}
+.fotoPortada{
+    background-image: url("../images/portada.jpg");
+    height: 70vh;
+    background-size: cover;
+}
+.fotoPortadaSeccion{
+    height: 30vh;
+}
+.contacto{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.redes{
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+}
+.contacto a, .redes a{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    text-decoration: none;
+    color: grey;
+}
+.topbar .contacto a:hover, .topbar .redes a:hover{
+    transform: scale(1.03);
+    color: black;
+    font-weight: 500;
+    text-decoration: underline 3px red;
+}
+.contacto a p, .redes a p{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.topbar .contacto img, .topbar .redes img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+header .fotoUsuarioRegistrado{
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* FOOTER   */
+
+.footer{
+    background-color:#2D3B38;
+    color: white;
+    padding-top: 30px;
+}
+.footer .derechosAutor{
+    width: 65%;
+    margin: auto;
+    border-top: 1px rgba(0, 0, 0, 0.416) solid;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer .info{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.footer .info .contacto, .footer .info .links{
+    width: 45%;
+}
+.footer .info .contacto ul .titulosFooter, .footer .info .links .titulosFooter{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #19ebbd;
+}
+.footer .info .links ul, .footer .info .contacto ul{
+    list-style: none;
+}
+.footer .info .contacto ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.footer .info .contacto ul img{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.footer .info .contacto ul p, .footer .info a{
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+.footer .info .links a:hover, .footer .info .contacto a:hover p{
+    color: aqua;
+    transform: scale(1.1);
+}
+
+
+/* pag INDEX  */
+.contenedorBeneficios>p{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: aquamarine;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+
+}
+.contenedorBeneficios .beneficios{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contenedorBeneficios .beneficios .beneficio{
+    width: 200px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.405);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 3px rgba(23, 23, 23, 0.405);
+    text-align: center;
+    margin: 30px;
+
+}
+.contenedorBeneficios .beneficios .beneficio .titulo{
+    font-size: 1.4rem;
+}
+.contenedorBeneficios .beneficios .beneficio img{
+    width: 130px;
+}
+.testimonios .cardTestimonio{
+    padding: 20px;
+}
+
+.testimonios .cardTestimonio .header img{
+    width:90%;
+    margin-right: 5%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+   
+}
+.testimonios .cardTestimonio .body span{
+    color: rebeccapurple;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+/* pag NOSOTROS   */
+.page-section{
+    margin-top: 30px; 
+}
+.contenedorEquipo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-doctor{
+    width: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card-doctor .header img{
+   width: 80%;
+   margin-left: 10%;
+    border-radius: 10px;
+}
+
+/* FORMS REGISTRO / LOGIN / CONTACTO */
+
+.formLogin, .formRegistro{
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.formLogin button, .formRegistro button{
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+}
+.formContacto{
+    margin-bottom: 70px;
+}
+
+
+
+/*  ESPECIFICO DASHBOARD PACIENTE  */ 
+.dashboardPaciente{
+}
+.dashboardPaciente .headerDashboard{
+    background-color: rgb(3, 79, 108);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+/*
+.dashboardPaciente .headerDashboard img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: cover;
+    text-align: right;
+}*/
+.dashboardPaciente .headerDashboard div{
+    margin-left: 10px;
+    text-align: center;
+}
+.dashboardPaciente .headerDashboard p{
+    font-size:1.2rem;
+    color: white;
+}
+
+.dashboardPaciente .headerDashboard .nombreUsuario{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.dashboardPaciente .contenedorGrafico{
+    color:rgb(3, 79, 108);
+}
+.dashboardPaciente .contenedorGrafico p{
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+.dashboardPaciente .contenedorGrafico .botoneraPeriodo{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+.dashboardPaciente .contenedorGrafico .botoneraPeriodo button{
+    border-radius: 10px;
+    width: 80px;
+    border: none;
+    margin-bottom: 10px;
+    background-color:white;
+    border: 1px solid gray;
+}
+.dashboardPaciente .contenedorGrafico .botoneraPeriodo button:hover{
+    color: white;
+    background-color:rgb(3, 79, 108);
+    transform: scale(1.05);
+}
+.dashboardPaciente .contenedorGrafico .grafico{
+   margin: auto;
+}
+
+/* boton nuevo registro   */
+.dashboardPaciente .btnAgregar{
+    position: sticky;
+    top: 90vh;
+    border: none;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left:calc(100vw - 100px);
+    z-index: 100;
+    background-color: rgba(8, 197, 43, 0.755);
+}
+.dashboardPaciente .btnAgregar img{
+    width: 40px;
+    border-radius: 50%;
+}
+.dashboardPaciente .btnAgregar:hover{
+    background-color: rgb(4, 125, 6);
+}
+
+/* modal nuevo registro   */
+.dashboardPaciente #nuevoRegistroGlucemia label{
+    margin-bottom: 5px;
+}
+.dashboardPaciente #nuevoRegistroGlucemia  input{
+    margin-bottom: 15px;
+}
+.dashboardPaciente #nuevoRegistroGlucemia .fechaActual{
+    text-align: right;
+    width: 100%;
+}
+
+
+/* listado de registros   */
+.dashboardPaciente .registros .registro{
+    background-color: rgba(0, 204, 255, 0.225);
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 95%;
+    max-width: 350px;
+}
+.dashboardPaciente .registros .registro:hover{
+    transform: scale(1.02);
+}
+.dashboardPaciente .registros .registro p{
+    margin: 0;
+}
+
+.dashboardPaciente .registros .registro .fecha{
+    color: grey;
+    font-weight: 300;
+}
+.dashboardPaciente .registros .registro .glucemia{
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.dashboardPaciente .registros .registro .notas{
+    color: rgba(7, 7, 7, 0.526);
+}
+
